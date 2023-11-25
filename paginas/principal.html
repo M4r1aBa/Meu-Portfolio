@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu Portfólio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #9d6c6c;
+        }
+
+        header {
+            color: #fff;
+            padding: 10px 0;
+            position: sticky;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            font-family: monospace;
+            margin: 15px 25px 0 25px;
+        }
+
+        .logo {
+            font-size: 28px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+        }
+
+        .menu li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            text-transform: uppercase;
+            position: relative;
+            transition: all .2s linear;
+        }
+
+        .menu li a:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            bottom: 0;
+            left: 0;
+            transition: all .3s linear;
+        }
+
+        .menu li:hover a:before {
+            width: 100%;
+            left: 0;
+            right: auto;
+            transition: all .3s linear;
+        }
+
+        .pagina-inicial {
+            background-size: cover;
+            height: 94vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            border-bottom: 2px solid black;
+            text-align: center;
+        }
+
+        .conteudo {
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            width: 100%;
+            max-width: none;
+        }
+
+        h1 {
+            font-size: 70px;
+            font-family: 'Arial', sans-serif;
+            margin: 0 0 20px 0;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Portfólio</div>
+            <ul class="menu">
+                <li><a href="./principal.html">Início</a></li>
+                <li><a href="./segundapagina.html" id="sobremim">Sobre Mim</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <section class="pagina-inicial" id="home">
+        <div class="conteudo">
+            <h1>Sejam todos bem vindos!!</h1>
+            <h2>Esse é o meu Portfólio</h2>
+        </div>
+    </section>
+</body>
+
+</html>

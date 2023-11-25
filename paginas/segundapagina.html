@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>segundaPagina</title>
+    
+    <style>
+
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+    #segunda-pagina {
+    background-color: #9d6c6c;
+    height: 100vh;
+
+}
+header {
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-family: monospace;
+    margin: 15px 25px 0 25px;
+}
+
+.logo {
+    font-size: 28px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all .2s linear;
+}
+
+.menu li a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    transition: all .3s linear;
+}
+
+.menu li:hover a:before {
+    width: 100%;
+    left: 0;
+    right: auto;
+    transition: all .3s linear;
+}
+h1 {
+    font-size: 60px;
+    font-family: 'Arial', sans-serif;
+    margin: 0 0 20px 0;
+    color: #9d6c6c;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 20px 0;
+    
+}
+
+.sobre-mim {
+    display: flex;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    width: 75%;
+    padding: 100px 0;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    position: relative;
+    overflow: hidden;
+}
+
+.painel-esquerdo {
+    background-color: #BC8F8F;
+    color: white;
+    padding: 20px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    height: 100%;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 10px;
+    justify-content: center;
+}
+
+.painel-esquerdo h2 {
+    text-decoration: none;
+    list-style: none;
+    color: #9d6c6c;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+    white-space: nowrap;
+}
+
+.titulo-principal {
+    font-size: 70px;
+    font-family: 'Arial', sans-serif;
+    margin: 0 0 20px 0;
+}
+
+.sobre-mim-texto {
+    font-size: 24px;
+    color: #9d6c6c;
+    margin: 0 50px 0 150px;
+}
+
+.conteudo-central {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.circulo-imagem {
+    
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+}
+
+.circulo-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    </style>
+
+</head>
+<body>
+    
+    <section id="segunda-pagina">
+        <header>
+            <nav>
+                <div class="logo">Portfólio</div>
+                <ul class="menu">
+                    <li><a href="./principal.html">Início</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="conteudo">
+            <div class="sobre-mim">
+                <div class="painel-esquerdo">
+                    <h2>MEU PORTFÓLIO</h2>
+                </div>
+                <div class="conteudo-central">
+                    <div class="circulo-imagem">
+                        <img src="../img/fotooooo.jpg" alt="">
+                    </div>
+                    <h1>Maria Clara Barreto</h1>
+                    <p class="sobre-mim-texto">Olá, Esse é o meu portfólio! Me chamo Maria Clara Barreto da Silva e tenho 15 anos.
+                        Atualmente estudo na escola estadual de ensino profissional, Valter Nunes de Alencar. Curso o 1º ano do ensino médio, do curso técnico em informática.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
